@@ -59,3 +59,9 @@ namespace asp_razor_09
         }
     }
 }
+
+/*
+
+dotnet aspnet-codegenerator razorpage -m Article -dc MyBlogContext -outDir Pages/Blog -udl --referenceScriptLibraries
+
+*/

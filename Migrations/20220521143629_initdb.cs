@@ -24,10 +24,10 @@ namespace asp_razor_09.Migrations
                 });
                 // insert data
                 // Fake data : bogus
-                Randomizer.Seed = new Random(8675309);
+                Randomizer.Seed = new Random(8675309);  
                 var fakerArticle = new Faker<Article>();
                 fakerArticle.RuleFor(a => a.Title, f => f.Lorem.Sentence(5,5));
-                fakerArticle.RuleFor(a => a.Created, f => f.Date.Between(new DateTime(2021,1,1), new DateTime(2021,3,3)));
+                fakerArticle.RuleFor(a => a.Created, f => f.Date.Between(new DateTime(2021,1,1), new DateTime(2022,3,3)));
                 fakerArticle.RuleFor(a => a.Content,f => f.Lorem.Paragraphs(1,4)); 
                 Article article = fakerArticle.Generate();
 
